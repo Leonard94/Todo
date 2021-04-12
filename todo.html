@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/null.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <meta name="robots" content="noindex,nofollow" />
+
+    <title>Todo app</title>
+</head>
+
+<body>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="header__container" id="header">
+            <div class="header__tilte">
+                TODO APP
+                <span class="header__span">by Leonard</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- App -->
+    <div class="app__container">
+        <div class="app__body">
+            <!-- input -->
+            <div class="task__input">
+                <input type="text" id="input" placeholder="Введите новую задачу">
+                <div class="input-img" id="plus">
+                    <img src="img/plus.svg" alt="icon">
+                </div>
+            </div>
+            <!-- Task body -->
+            <div class="tasks__body" id="tasks-body">
+            </div>
+            <!-- Completed Task -->
+            <div class="completed-task__body" id="completed-task-body">
+            </div>
+        </div>
+    </div>
+
+    <!-- Right Click -->
+    <div class="right-click" id="right-click">
+        <div class="rc__task" id="rc-task">
+            <div class="rc__task-delete" id="remove-task">
+                Удалить задачу
+            </div>
+            <div class="rc__task-color" id="change-priotiry">
+                Сменить приоритет
+                <img src="img/arrow.svg" alt="icon">
+            </div>
+            <div class="task-color__change-priority" id="btn-priority">
+                <div class="rc-task-color" priority='red'>Срочно</div>
+                <div class="rc-task-color" priority='green'>Важно</div>
+                <div class="rc-task-color" priority='white'>Обычно</div>
+            </div>
+        </div>
+        <div class="rc__page" id="rc-page-color">
+            <div class="rc__page-color">
+                Сменить цвет темы
+                <img src="img/arrow.svg" alt="icon">
+            </div>
+            <div class="pagecolor-choose" id="page-color-choose">
+                <div class="pg-color" color='оcher'>Охра</div>
+                <div class="pg-color" color='coral'>Коралл</div>
+                <div class="pg-color" color='turquoise'>Бирюза</div>
+                <div class="pg-color" color='pink'>Розовый</div>
+                <div class="pg-color" color='mint'>Мята</div>
+                <div class="pg-color" color='purple'>Пурпур</div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="js/script.js"></script>
+
+</html>
